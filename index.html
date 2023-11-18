@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="shortcut icon" href="./assets/icon black outline.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./mainContainer.css">
+    <link rel="stylesheet" href="./musicControlDock.css">
+    <link rel="stylesheet" href="./playlistContainer.css">
+    <link rel="stylesheet" href="./sidebar.css">
+</head>
+<body>
+
+<!-- ---------- SIDE PANEL ---------- -->
+<aside class="side-parentContainer">
+
+    <section class="side-topContainer">
+
+        <div class="side-topContainer-home">
+            <img src="./assets/asset 155.svg" alt="Icon">
+            <p>Home</p>
+        </div>
+
+        <div class="side-topContainer-search">
+            <img src="./assets/asset 156.svg" alt="Icon">
+            <p>Search</p>
+        </div>
+
+    </section>
+
+    <!-- Bottom container -->
+    <section class="side-bottomContainer">
+        <!-- library -->
+        <div class="side-bottomContainer-library">
+
+            <div class="side-bottomContainer-library-left">
+                <img src="./assets/asset 158.svg" alt="Icon">
+                <p>Your Library</p>
+            </div>
+            
+            <div class="side-bottomContainer-library-right">
+                <img src="./assets/asset 159.svg" alt="Icon">
+                <img src="./assets/asset 160.svg" alt="Icon">
+            </div>
+
+        </div>
+        <!-- badges -->
+        <div class="side-bottomContainer-badges">
+            <p class="library-badge">Playlists</p>
+            <p class="library-badge">Artists</p>
+            <p class="library-badge">Album</p>
+            <p class="library-badge">Podcasts & Shows</p>
+        </div>
+        <!-- search -->
+        <div class="side-bottomContainer-search">
+            <button class="searchButton">
+                <img src="./assets/asset 161.svg" alt="Icon">
+            </button>
+
+            <button class="recentButton">
+                <p>Recents</p>
+                <img src="./assets/asset 162.svg" alt="Icon">
+            </button>
+        </div>
+        <!-- playlists -->
+        <div class="side-bottomContainer-playlists">
+            
+            <div class="playlist-card">
+                <img src="./assets/asset 0.png" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">Liked Songs</h1>
+                    <p class="description">Playlist &#8226; 770 songs</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 1.jpeg" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">Escape</h1>
+                    <p class="description">Album &#8226; Enrique Iglesias</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 2.jpg" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">Gym playlist</h1>
+                    <p class="description">Playlist &#8226; Spotify</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 3.jpeg" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">Songs</h1>
+                    <p class="description">Album &#8226; Amit Trivedi</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 19.jpeg" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">Mood</h1>
+                    <p class="description">Playlist &#8226; Zaidi</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 4.jpeg" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">Bollywood Playlist</h1>
+                    <p class="description">Album &#8226; Bob Dylan</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 5.jpeg" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">Throwback Workout</h1>
+                    <p class="description">Playlist &#8226; Spotify</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 6.jpeg" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">Throwback Workout</h1>
+                    <p class="description">Playlist &#8226; Spotify</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 7.jpeg" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">Retro Running</h1>
+                    <p class="description">Playlist &#8226; Spotify</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 8.jpeg" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">The Joe Rogan Experience</h1>
+                    <p class="description">Podcast &#8226; Joe Rogan</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 9.jpeg" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">Delta 4hz</h1>
+                    <p class="description">Album &#8226; Binaural Beats Lab</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 10.jpeg" alt="Icon" style="border-radius: 99em;">
+                <div class="playlistInfo">
+                    <h1 class="title">Conor Maynard</h1>
+                    <p class="description">Artist</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 11.jpeg" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">Inside Shopify UX</h1>
+                    <p class="description">Podcast &#8226; Lola Oyelayo-Pearson</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 12.jpeg" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">Deep Work</h1>
+                    <p class="description">Playlist &#8226; Natasha Anwar</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 13.jpeg" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">beats to relax/study </h1>
+                    <p class="description">Playlist &#8226; Lofi Girl</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 14.jpeg" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">Business Wars</h1>
+                    <p class="description">Podcast &#8226; Wondery</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assets/asset 15.jpeg" alt="Icon">
+                <div class="playlistInfo">
+                    <h1 class="title">99% Invisible</h1>
+                    <p class="description">Podcast &#8226; Roman Mars</p>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+
+</aside>
+
+
+
+<!-- ---------- MAIN ---------- -->
+<container class="main-parentContainer">
+
+    <!-- sticky nav -->
+    <nav class="main-stickyNav">
+
+        <div class="main-stickyNav-leftButton">
+            <button class="roundIconButton"><img src="./assets/asset 180.svg" alt=""></button>
+            <button class="roundIconButton"><img src="./assets/asset 181.svg" alt=""></button>
+        </div>
+
+        <div class="main-stickyNav-rightButton">
+
+            <button class="roundIconButton withText"><img src="./assets/asset 182.svg" alt=""><span>Install App</span></button>
+
+            <button class="roundIconButton"><img src="./assets/asset 183.svg" alt=""></button>
+            <button class="roundIconButton"><img src="./assets/asset 184.svg" alt=""></button>
+        </div>
+
+    </nav>
+
+    <div class="main-heroContainer">
+
+        <h1 class="hero-title">Good evening</h1>
+
+        <div class="hero-GridContainer">
+
+            <div class="hero-card">
+                <img src="./assets/asset 21.png" alt="">
+                <span>Liked Songs</span>
+            </div>
+
+            <div id="Whats-poppin-card" class="hero-card">
+                <img src="./assets/asset 22.jpg" alt="">
+                <span>WHATS POPPIN Radio</span>
+            </div>
+
+            <div class="hero-card">
+                <img src="./assets/asset 26.jpg" alt="">
+                <span>Radio</span>
+            </div>
+
+            <div class="hero-card">
+                <img src="./assets/asset 23.jpg" alt="">
+                <span>Bollywood Mix</span>
+            </div>
+
+            <div class="hero-card">
+                <img src="./assets/asset 25.jpg" alt="">
+                <span>Top Mix</span>
+            </div>
+
+            <div class="hero-card">
+                <img src="./assets/asset 24.jpeg" alt="">
+                <span>Top 100 most streamed songs</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-cardsContainer">
+
+        <div class="cards-row">
+            <div class="cards-title">
+                <h1>Made For You</h1>
+                <button class="ShowAll">Show all</button>
+            </div>
+
+            <div class="cards-flexbox">
+
+                <div class="card">
+                    <img src="./assets/asset 57.jpeg" alt="">
+                    <h3 class="songName">Daily Mix 1</h3>
+                    <p>John Denver, Eric Clapton, O'Sullivan</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 58.jpeg" alt="">
+                    <h3 class="songName">Daily Mix 2</h3>
+                    <p>The Beatles, Queen, The doors and more</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 59.jpeg" alt="">
+                    <h3 class="songName">Daily Mix 3</h3>
+                    <p>Sachet Tandom, Darshan Raval, Matraz</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 60.jpeg" alt="">
+                    <h3 class="songName">Daily Mix 4</h3>
+                    <p>Pritam, Sachet Randon, Vishal-Shekhar and more</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 61.jpeg" alt="">
+                    <h3 class="songName">Daily Mix 5</h3>
+                    <p>A.R. Rahman, Pritam, Abhijeet and more</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 62.jpeg" alt="">
+                    <h3 class="songName">Daily Mix 6</h3>
+                    <p>David Bowie, The Velvet Underground</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        
+        <div class="cards-row">
+            <div class="cards-title">
+                <h1>Your top mixes</h1>
+                <button class="ShowAll">Show all</button>
+            </div>
+
+            <div class="cards-flexbox">
+
+                <div class="card">
+                    <img src="./assets/asset 27.jpeg" alt="">
+                    <h3 class="songName">Romantic Mix</h3>
+                    <p>Ajit Kale, King, Jasleen Royal and more</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 28.jpeg" alt="">
+                    <h3 class="songName">Chill Mix</h3>
+                    <p>The Lumineers, Post Malone, Glass Animals</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 29.jpeg" alt="">
+                    <h3 class="songName">Ed Sheeran Mix</h3>
+                    <p>Lewis Capaldi, James Arthur and The Weekend</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 30.jpeg" alt="">
+                    <h3 class="songName">Pritam Mix</h3>
+                    <p>Amit Trivedi, Jasleen Riyal and Sachet and more</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 31.jpeg" alt="">
+                    <h3 class="songName">2010s Mix</h3>
+                    <p>Imagine Dragons, XXXTENTACION, The Lumineers</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 32.jpeg" alt="">
+                    <h3 class="songName">Hindi Mix</h3>
+                    <p>Linkin Park, Rashid Khan, Farkhan Akhtar and more</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="cards-row">
+            <div class="cards-title">
+                <h1>Shows you might like</h1>
+                <button class="ShowAll">Show all</button>
+            </div>
+
+            <div class="cards-flexbox">
+
+                <div class="card">
+                    <img src="./assets/asset 34.jpeg" alt="">
+                    <h3 class="songName">Empire</h3>
+                    <p>Goalhanger Podcasts</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 35.jpeg" alt="">
+                    <h3 class="songName">The Stories of Mahabharata</h3>
+                    <p>Sudipta Bhawnik</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 36.jpeg" alt="">
+                    <h3 class="songName">Osho Hindi</h3>
+                    <p>Mahant Govind Das Swami</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 37.jpeg" alt="">
+                    <h3 class="songName">Bhagavad Gita</h3>
+                    <p>Anish Chaitanya</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 38.jpeg" alt="">
+                    <h3 class="songName">Rich Habits Podcast</h3>
+                    <p>Autism Hankwitz & Robert Croak</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 39.jpeg" alt="">
+                    <h3 class="songName">Weekly Motivation</h3>
+                    <p>Ben Lionel Scott</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="cards-row">
+            <div class="cards-title">
+                <h1>Recently played</h1>
+                <button class="ShowAll">Show all</button>
+            </div>
+
+            <div class="cards-flexbox">
+
+
+                <div class="card">
+                    <img src="./assets/asset 41.png" alt="">
+                    <h3 class="songName">Liked Songs</h3>
+                    <p>770 songs</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="./assets/asset 42.jpg" alt="">
+                    <h3 class="songName">Jutt Blues Radio</h3>
+                    <p>By Spotify</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 43.jpg" alt="">
+                    <h3 class="songName">Tyler Herro Radio</h3>
+                    <p>By Spotify</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 44.jpg" alt="">
+                    <h3 class="songName">INDUSTRY BABY (feat. Jack Harlow)</h3>
+                    <p>By Spotify</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 23.jpg" alt="">
+                    <h3 class="songName">Radio</h3>
+                    <p>By Spotify</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 25.jpg" alt="">
+                    <h3 class="songName">Excuses Radio</h3>
+                    <p>By Spotify</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="cards-row">
+            <div class="cards-title">
+                <h1>Bollywood's Best</h1>
+                <button class="ShowAll">Show all</button>
+            </div>
+
+            <div class="cards-flexbox">
+
+
+                <div class="card">
+                    <img src="./assets/asset 45.jpeg" alt="">
+                    <h3 class="songName">Bollywood Dance Mast</h3>
+                    <p>Party-ready, bigest Bollywood dance tracks</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 46.jpeg" alt="">
+                    <h3 class="songName">00's Dance Bollywood</h3>
+                    <p>Groove it to the biggest bangers of the decade</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 47.jpeg" alt="">
+                    <h3 class="songName">All out 00's Hindi</h3>
+                    <p>Bollywood songs that ruled hearts in the Y2K</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 48.jpeg" alt="">
+                    <h3 class="songName">Bollywood </h3>
+                    <p>let these songs be the background score to your date</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 49.jpeg" alt="">
+                    <h3 class="songName">Bollywood Butter</h3>
+                    <p>B bole toh biggest blockbuster</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/asset 50.jpeg" alt="">
+                    <h3 class="songName">Bollywood 2.0</h3>
+                    <p>Hits, repackaged by Bollywood, Cover and Medleys</p>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+    
+<!-- Footer -->
+
+        <!-- footer top half -->
+        <div class="footer-top">
+
+            <div class="footer-top-left">
+
+                <div class="footer-list">
+                    <h3 class="songName">Company</h3>
+                    <ul>
+                        <li>About</li>
+                        <li>Jobs</li>
+                        <li>For the Record</li>
+                    </ul>
+                </div>
+
+                <div class="footer-list">
+                    <h3 class="songName">Communities</h3>
+                    <ul>
+                        <li>For Artists</li>
+                        <li>Developers</li>
+                        <li>Advertising</li>
+                        <li>Investors</li>
+                        <li>Vendors</li>
+                    </ul>
+                </div>
+
+                <div class="footer-list">
+                    <h3 class="songName">Useful Links</h3>
+                    <ul>
+                        <li>Support</li>
+                        <li>Free Mobile App</li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="footer-top-right">
+
+                <button class="roundIconButton footerSocial">
+                    <img src="./assets/asset 186.svg" alt="">
+                </button>
+
+                <button class="roundIconButton footerSocial">
+                    <img src="./assets/asset 187.svg" alt="">
+                </button>
+
+                <button class="roundIconButton footerSocial">
+                    <img src="./assets/asset 188.svg" alt="">
+                </button>
+                
+            </div>
+
+        </div>
+
+        </div>
+        
+        
+        <!-- footer bottom half -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <a href="footer-links">Legal</a>
+                <a href="footer-links">Privacy Center</a>
+                <a href="footer-links">Privacy Policy</a>
+                <a href="footer-links">Cookies</a>
+                <a href="footer-links">About Ads</a>
+                <a href="footer-links">Accessibility</a>
+
+            </div>
+
+            <div class="footer-bottom-right">
+                <p>&copy; 2023 Spotify AB</p>
+            </div>
+        </div>
+
+
+        <!-- </div> -->
+
+</container>
+
+
+
+<!-- ---------- MAIN PLAYLIST OVERLAY ---------- -->
+<container class="main-overlayContainer">
+
+    <!-- sticky nav -->
+    <nav class="main-stickyNav">
+
+        <div class="main-stickyNav-leftButton">
+            <button class="roundIconButton" id="backToHome"><img src="./assets/asset 180.svg" alt=""></button>
+            <button class="roundIconButton"><img src="./assets/asset 181.svg" alt=""></button>
+        </div>
+
+        <div class="main-stickyNav-rightButton">
+
+            <button class="roundIconButton withText"><img src="./assets/asset 182.svg" alt=""><span>Install App</span></button>
+
+            <button class="roundIconButton"><img src="./assets/asset 183.svg" alt=""></button>
+            <button class="roundIconButton"><img src="./assets/asset 184.svg" alt=""></button>
+        </div>
+
+    </nav>
+
+    <!-- hero container -->
+
+    <div class="overlay-hero-container">
+        <div class="album-details">
+
+            <div class="albumCover">
+                <img src="./assets/overlay assets/asset 20.jpg" alt="">
+            </div>
+            <div class="albumText">
+                <p>Playlist</p>
+                <h1>WHATS POPPIN Radio</h1>
+                <span><img src="./assets/overlay assets/spotify-logo (1).png" alt=""> <p class="spotify">Spotify</p> &#8226; 5,914 likes &#8226; 50 songs, <p class="time">about 2 hr</p></span>
+            </div>
+
+        </div>
+
+        <div class="album-CTAs">
+            <button class="hero-play">
+                <img src="./assets/overlay assets/asset 79.svg" alt="">
+            </button>
+            <button class="hero-favorite">
+                <img src="./assets/overlay assets/asset 83.svg" alt="">
+            </button>
+            <button class="hero-more">
+                <img src="./assets/overlay assets/asset 88.svg" alt="">
+            </button>
+        </div>
+    </div>
+    
+
+
+    <!-- Songs table -->
+
+    <table class="songs-table">
+        <thead>
+            <tr class="header">
+                <th class="center-align index">#</th>
+                <th class="left-align">Title</th>
+                <th class="left-align">Album</th>
+                <th class="left-align">Date Added</th>
+                <th class="center-align">.</th>
+                <th class="center-align"><img src="./assets/overlay assets/asset 85.svg" alt=""></th>
+            </tr>
+        </thead>
+
+        <tbody class="table-body">
+            
+            <tr class="song-row songItem " id="0">
+                <td class="center-align gifCell"><img id="gif" style="display: none;" src="./assets/overlay assets/green eq.gif" alt="">1</td>
+                <td class="song-details">
+                    <img src="" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">...</h3>
+                        <div><span>E</span><p class="artist">..</p></div>
+                    </div>
+                </td>
+                <td class="left-align">Sweet Action</td>
+                <td class="left-align"> </td>
+                <td class="center-align"><svg xmlns="http://www.w3.org/2000/svg" fill="white" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"/></svg></td>
+                <td class="center-align">2:19</td>
+
+            </tr>
+
+            <tr class="song-row songItem " id="1">
+                <td class="center-align gifCell"><img id="gif" style="display: none;" src="./assets/overlay assets/green eq.gif" alt="">2</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 23.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">Sunflower - Spider-Man: Into the Spider Verse</h3>
+                        <div><p class="artist">Post Malone, Swae Lee</p></div>
+                    </div>
+                </td>
+                <td class="left-align">Hollywood's Bleeding</td>
+                <td class="left-align"> </td>
+                <td class="center-align"><svg xmlns="http://www.w3.org/2000/svg" fill="white" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"/></svg></td>
+                <td class="center-align">2:37</td>
+
+            </tr>
+
+            <tr class="song-row songItem " id="2">
+                <td class="center-align gifCell"><img id="gif" style="display: none;" src="./assets/overlay assets/green eq.gif" alt="">3</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 24.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">INDUSTRY BABY (feat. Jack Harlow)</h3>
+                        <div><span>E</span><p class="artist">Lil Nas X, Jack Harlow</p></div>
+                    </div>
+                </td>
+                <td class="left-align">MONTERO</td>
+                <td class="left-align"> </td>
+                <td class="center-align"><svg xmlns="http://www.w3.org/2000/svg" fill="white" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"/></svg></td>
+                <td class="center-align">3:32</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">4</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 25.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">bad vibes forever (feat. PnB Rock and Trippy Red)</h3>
+                        <div><span>E</span><p class="artist">XXXTENTACION, PnB rock, Trippie Redd</p></div>
+                    </div>
+                </td>
+                <td class="left-align">Bad Vibes Forever</td>
+                <td class="left-align"> </td>
+                <td class="center-align"></td>
+                <td class="center-align">2:30</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">5</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 26.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">Did It Again</h3>
+                        <p class="artist">Lil Tecca</p>
+                    </div>
+                </td>
+                <td class="left-align">We Love You Tecca</td>
+                <td class="left-align"> </td>
+                <td class="center-align"></td>
+                <td class="center-align">1:56</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">6</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 27.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">Rendezvous</h3>
+                        <p class="artist"> <span>E</span>Jack Harlow</p>
+                    </div>
+                </td>
+                <td class="left-align">Thats What They All Say</td>
+                <td class="left-align"> </td>
+                <td class="center-align"><svg xmlns="http://www.w3.org/2000/svg" fill="white" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"/></svg></td>
+                <td class="center-align">1:53</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">7</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 28.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">The Box</h3>
+                        <p class="artist"> <span>E</span>Roddy Ricch</p>
+                    </div>
+                </td>
+                <td class="left-align">Please Excuse Me for Being Antisocial</td>
+                <td class="left-align"> </td>
+                <td class="center-align"><svg xmlns="http://www.w3.org/2000/svg" fill="white" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"/></svg></td>
+                <td class="center-align">3:16</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">8</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 29.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">Better Now</h3>
+                        <p class="artist"> <span>E</span>Post Malone</p>
+                    </div>
+                </td>
+                <td class="left-align">beerbongs & bentleys</td>
+                <td class="left-align"> </td>
+                <td class="center-align"></td>
+                <td class="center-align">3:51</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">9</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 30.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">After Party</h3>
+                        <p class="artist"> Don Toliver</p>
+                    </div>
+                </td>
+                <td class="left-align">Heaven or Hell</td>
+                <td class="left-align"> </td>
+                <td class="center-align"><svg xmlns="http://www.w3.org/2000/svg" fill="white" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"/></svg></td>
+                <td class="center-align">2:47</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">10</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 31.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">Falling</h3>
+                        <p class="artist"> Trevor Daniel</p>
+                    </div>
+                </td>
+                <td class="left-align">Nicotine</td>
+                <td class="left-align"> </td>
+                <td class="center-align"><svg xmlns="http://www.w3.org/2000/svg" fill="white" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"/></svg></td>
+                <td class="center-align">2:39</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">11</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 32.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">OUT FRONT</h3>
+                        <p class="artist"> <span>E</span>Jack Harlow</p>
+                    </div>
+                </td>
+                <td class="left-align">Sweet Action</td>
+                <td class="left-align"> </td>
+                <td class="center-align"></td>
+                <td class="center-align">2:58</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">12</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 33.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">Moonlight</h3>
+                        <p class="artist"> XXXTENTACION</p>
+                    </div>
+                </td>
+                <td class="left-align">?</td>
+                <td class="left-align"> </td>
+                <td class="center-align"></td>
+                <td class="center-align">2:15</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">13</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 34.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">2055</h3>
+                        <p class="artist"> <span>E</span>Sleepy Hallow</p>
+                    </div>
+                </td>
+                <td class="left-align">Still Sleep?</td>
+                <td class="left-align"> </td>
+                <td class="center-align"></td>
+                <td class="center-align">2:03</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">14</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 35.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">Psycho (feat. Ty Dolla $ign)</h3>
+                        <p class="artist"> <span>E</span>Post Malone, Ty Dolla $ign</p>
+                    </div>
+                </td>
+                <td class="left-align">beerbongs & bentleys</td>
+                <td class="left-align"> </td>
+                <td class="center-align"></td>
+                <td class="center-align">3:41</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">15</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 36.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">Ransom</h3>
+                        <p class="artist"> Lil Tecca</p>
+                    </div>
+                </td>
+                <td class="left-align">We Love You Tecca</td>
+                <td class="left-align"> </td>
+                <td class="center-align"></td>
+                <td class="center-align">2:11</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">16</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 37.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">Way Out (feat. Big Season)</h3>
+                        <p class="artist"> <span>E</span> Jack Harlow, Big Sean</p>
+                    </div>
+                </td>
+                <td class="left-align">Whats What They All Say</td>
+                <td class="left-align"> </td>
+                <td class="center-align"></td>
+                <td class="center-align">2:48</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">17</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 38.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">CITY OF ANGELS</h3>
+                        <p class="artist"> <span>E</span>24kGoldn</p>
+                    </div>
+                </td>
+                <td class="left-align">DROP OUTTA COLLEGE</td>
+                <td class="left-align"> </td>
+                <td class="center-align"></td>
+                <td class="center-align">2:19</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">18</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 39.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">Astronaut In The Ocean</h3>
+                        <p class="artist"> <span>E</span>Masked Wolf</p>
+                    </div>
+                </td>
+                <td class="left-align">Astronomical</td>
+                <td class="left-align"> </td>
+                <td class="center-align"></td>
+                <td class="center-align">2:12</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">19</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 40.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">Roses - Imanbek Remix</h3>
+                        <p class="artist"> Saint John, Imanbek</p>
+                    </div>
+                </td>
+                <td class="left-align">Roses (Imanbek Remix)</td>
+                <td class="left-align"> </td>
+                <td class="center-align"></td>
+                <td class="center-align">2:56</td>
+
+            </tr>
+
+            <tr class="song-row">
+                <td class="center-align">20</td>
+                <td class="song-details">
+                    <img src="./assets/overlay assets/asset 41.jpeg" alt="">
+                    <div class="song-details-text">
+                        <h3 class="songName">Congratulations</h3>
+                        <p class="artist"> <span>E</span>Post Malone, Quavo</p>
+                    </div>
+                </td>
+                <td class="left-align">Stoney (Deluxe)</td>
+                <td class="left-align"> </td>
+                <td class="center-align"></td>
+                <td class="center-align">3:40</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+   
+    
+    <!-- Footer -->
+
+        <!-- footer top half -->
+        <div class="footer-top">
+
+            <div class="footer-top-left">
+
+                <div class="footer-list">
+                    <h3 class="songName">Company</h3>
+                    <ul>
+                        <li>About</li>
+                        <li>Jobs</li>
+                        <li>For the Record</li>
+                    </ul>
+                </div>
+
+                <div class="footer-list">
+                    <h3 class="songName">Communities</h3>
+                    <ul>
+                        <li>For Artists</li>
+                        <li>Developers</li>
+                        <li>Advertising</li>
+                        <li>Investors</li>
+                        <li>Vendors</li>
+                    </ul>
+                </div>
+
+                <div class="footer-list">
+                    <h3 class="songName">Useful Links</h3>
+                    <ul>
+                        <li>Support</li>
+                        <li>Free Mobile App</li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="footer-top-right">
+
+                <button class="roundIconButton footerSocial">
+                    <img src="./assets/asset 186.svg" alt="">
+                </button>
+
+                <button class="roundIconButton footerSocial">
+                    <img src="./assets/asset 187.svg" alt="">
+                </button>
+
+                <button class="roundIconButton footerSocial">
+                    <img src="./assets/asset 188.svg" alt="">
+                </button>
+                
+            </div>
+
+        </div>
+
+        </div>
+        
+        
+        <!-- footer bottom half -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <a href="footer-links">Legal</a>
+                <a href="footer-links">Privacy Center</a>
+                <a href="footer-links">Privacy Policy</a>
+                <a href="footer-links">Cookies</a>
+                <a href="footer-links">About Ads</a>
+                <a href="footer-links">Accessibility</a>
+
+            </div>
+
+            <div class="footer-bottom-right">
+                <p>&copy; 2023 Spotify AB</p>
+            </div>
+        </div>
+
+
+        <!-- </div> -->
+
+</container>
+
+
+
+<!-- ---------- PLAY DOCK ---------- -->
+
+<section class="dock-parentContainer">
+
+    <div class="audioPlayer">
+
+        <div class="audioPlayer-songInfo">
+            <img id="masterAlbumCover" src="./assets/overlay assets/album placeholder.png" alt="">
+            <div class="audioPlayer-left-text">
+                <h3 id="masterSongName">INDUSTRY BABY (feat. Jack Harlow)</h3>
+                <p id="masterArtistName">Lil Nas X, Jack Harlow</p>
+            </div>
+            <img src="./assets/overlay assets/fav-stroke-white80.svg" alt="" width="16px">
+        </div>
+
+        <div class="audioPlayer-controls">
+            <div class="audioButtons">
+                <button class="roundIconButton"><img src="./assets/overlay assets/asset 67.svg" alt=""></button>
+                <button class="roundIconButton" id="previous"><img src="./assets/overlay assets/asset 68.svg" alt=""></button>
+                <button class="" id="playCTA"><img src="./assets/overlay assets/asset 79.svg" alt=""></button>
+                <button class="roundIconButton" id="next"><img src="./assets/overlay assets/asset 70.svg" alt=""></button>
+                <button class="roundIconButton"><img src="./assets/overlay assets/asset 71.svg" alt=""></button>
+            </div>
+            <div class="seekBar">
+                <input type="range" name="range" initial-value="0" id="songProgressBar">
+
+                <!-- <audio controls>
+                    <source src="./assets/overlay assets/jack Harlow - WHATS POPPIN.mp3" type="audio/mp3">
+                </audio> -->
+
+            </div>
+        </div>
+
+        <div class="audioPlayer-volumeEtc">
+            <button class="roundIconButton"><img src="./assets/overlay assets/asset 72.svg" alt=""></button>
+            <button class="roundIconButton"><img src="./assets/overlay assets/asset 73.svg" alt=""></button>
+            <button class="roundIconButton"><img src="./assets/overlay assets/asset 74.svg" alt=""></button>
+            <button class="roundIconButton"><img src="./assets/overlay assets/asset 75.svg" alt=""></button>
+            <input type="range" name="range" id="volumeSlider">
+            <button class="roundIconButton"><img src="./assets/overlay assets/asset 76.svg" alt=""></button>
+        </div>
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+<!-- Script Tags -->
+    <script src="./playingSongs.js"></script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>

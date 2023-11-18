@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-headingColor);
+    font-size: 16px;
+    font-weight: 400;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+}
+
+:root {
+    --bg-black: #000000;
+    --bg-darkGrey: #121212;
+    --bg-gradientGrey: #202020;
+    --text-headingColor: #ffffff;
+    --text-bodyColor: #A7A7A7;
+    --primary-green: #1ed760;
+
+    --font-heading: 'Roboto', sans-serif; 
+    --font-body: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--bg-black);
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+
+/* ------------ MAIN PLAYLIST OVERLAY ------------ */
+
+
+.main-overlayContainer {
+    background-color: var(--bg-darkGrey);
+    border-radius: 8px;
+    /* width: calc(100vw - 420px); */
+    width: 75vw;
+    height: calc(100vh - 72px - 16px - 8px);
+    overflow: auto;
+    display: none;
+}
+
+.main-overlayContainer::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* sticky nav bar */
+.main-stickyNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 24px 28px;
+    width: calc(75vw - 60px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    /* background-color: red; */
+}
+
+.roundIconButton {
+    /* background: none; */
+    background-color: #00000079;
+    border: 0;
+    border-radius: 99em;
+    height: 32px;
+    width: 32px;
+    margin: 0px 2px;
+    /* padding: 0; */
+}
+
+.roundIconButton img {
+    width: 16px;
+    filter: invert(1);
+    opacity: 0.6;
+    vertical-align: middle;
+}
+
+.roundIconButton:hover {
+    background-color: #000000E6;
+    cursor: pointer;
+}
+
+.main-stickyNav-rightButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    
+}
+
+.withText {
+    width: 118px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.withText img {
+    opacity: 1;
+    margin-right: 8px;
+    /* display: inline-block; */
+}
+
+.withText span {
+    font-size: 14px;
+}
+
+
+/* Hero container */
+
+.overlay-hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: calc(16px + 72px) 24px 0 24px;
+    background: linear-gradient(to bottom, #80C7BF, var(--bg-darkGrey));
+    /* background-attachment: scroll; */
+}
+
+.album-details {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: end;
+}
+
+.albumCover img {
+    width: 232px;
+    height: 232px;
+    object-fit: cover;
+    filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.25));
+}
+
+.albumText {
+
+}
+
+.albumText h1 {
+    font-size: 72px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.albumText p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.albumText span {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.albumText span img {
+    width: 24px;
+}
+
+.albumText span .spotify {
+    font-weight: 500;
+}
+
+.time {
+    font-weight: 300;
+    opacity: 0.6;
+}
+
+/* Hero Album CTAs */
+
+.album-CTAs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    margin: 24px 0;
+}
+
+.album-CTAs button {
+    background: none;
+    border: 0;
+    width: 32px;
+    height: 32px;
+}
+
+.album-CTAs .hero-play {
+    size: 56px 56px;
+    height: 56px;
+    width: 56px;
+    background-color: var(--primary-green);
+    border-radius: 99em;
+}
+
+.hero-play img {
+    height: 24px;
+    vertical-align: middle;
+}
+
+.hero-favorite img {
+   filter: invert(1);
+   opacity: 0.6;
+}
+
+.hero-more img {
+    filter: invert(1);
+    opacity: 0.6;
+}
+
+
+/* Songs Table */
+
+table {
+    border: 0px;
+    border-collapse: collapse;
+    /* padding: 0px 32px; */
+}
+
+.songs-table {
+    width: 96%;
+    margin: auto;
+    /* padding: 16px 56px; */
+
+}
+
+th, td {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-bodyColor);
+}
+
+th {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 0;
+    margin-bottom: 16px !important;
+}
+
+thead {
+    
+}
+
+th:first-child {
+    width: 56px !important;
+}
+
+th:nth-child(4) {
+    width: 150px;
+}
+
+th:nth-child(5) {
+    width: 60px;
+}
+
+th:nth-child(6) {
+    width: 80px;
+    /* padding-right: 36px; */
+}
+
+td:nth-child(6) {
+    border-radius: 0px 8px 8px 0px;
+    
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.025);
+}
+
+td:first-child {
+    border-radius: 8px 0px 0px 8px;
+    /* background-color: red; */
+}
+
+
+tbody:before {
+    content:"@";
+    display:block;
+    line-height:16px;
+    text-indent:-99999px;
+}
+
+tbody {
+    margin-top: 16px !important;
+}
+
+.table-body {
+    padding: 26px 0;
+}
+
+.header {
+    margin-bottom: 16px !important;
+}
+
+.header .index {
+    width: 36px;
+}
+
+.header th img {
+    width: 16px;
+    filter: invert(1);
+    opacity: 0.6;
+}
+
+/* songs line items / rows */
+
+
+.song-row {
+    /* background-color: rgba(255, 255, 255, 0.025); */
+    border-radius: 8px;
+}
+
+.song-row:hover {
+
+    cursor: pointer;
+}
+
+td {
+    border: 0px;
+}
+
+.song-details {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.song-details img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.song-details-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* width: 100%; */
+}
+
+.song-details-text h3 {
+    font-weight: 400;
+}
+
+.song-details-text span {
+    background-color: #ffffff99;
+    padding: 3px 5px;
+    font-size: 10px;
+    color: #000000;
+    border-radius: 2px;
+    margin-right: 4px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.song-details-text p {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-bodyColor);
+    /* align-items: center;
+    vertical-align: middle;
+    justify-content: center; */
+}
+
+
+.center-align {
+    text-align: center;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.center-align svg {
+    height: 16px;
+
+    fill: var(--primary-green);
+}
+
+.rowSelect {
+    background-color: rgba(255, 255, 255, 0.025);
+    border-radius: 8px;
+}
+
+.rowSelect h3 {
+    color: var(--primary-green);
+}
+
+.gifCell {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#gif {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+}
+
+
+/* Footer */
+
+
+.footer-top {
+    margin: 32px 24px;
+    padding: 32px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-top: 60px; */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-top-left {
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+
+.footer-list {
+
+}
+
+.footer-list h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-headingColor);
+    margin-bottom: 8px;
+}
+
+.footer-list li {
+    margin-right: 16px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-bodyColor);
+    line-height: 2em;
+}
+
+.footer-top-right{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    /* align-items: center; */
+}
+
+.footer-top-right .roundIconButton {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.060);    
+}
+
+.footer-top-right .roundIconButton img {
+    opacity: 1;  
+}
+
+
+/* footer bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 24px;
+    padding-bottom: 32px;
+}
+
+.footer-bottom-left {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.footer-bottom-left a, .footer-bottom-right p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-bodyColor);
+    text-decoration: none;
+}
+

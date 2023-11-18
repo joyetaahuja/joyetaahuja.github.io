@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-headingColor);
+    font-size: 16px;
+    font-weight: 400;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+}
+
+:root {
+    --bg-black: #000000;
+    --bg-darkGrey: #121212;
+    --bg-gradientGrey: #202020;
+    --text-headingColor: #ffffff;
+    --text-bodyColor: #A7A7A7;
+    --primary-green: #1ed760;
+
+    --font-heading: 'Roboto', sans-serif; 
+    --font-body: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--bg-black);
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+
+/* ------------ PLAY DOCK ------------ */
+
+.dock-parentContainer {
+    height: 72px;
+    /* background-color: rebeccapurple; */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 8px;
+}
+
+.audioPlayer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    height: 100%;
+}
+
+/* Song info section */
+.audioPlayer-songInfo {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.audioPlayer-songInfo h3 {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 4px;
+}
+
+
+.audioPlayer-songInfo p {
+    font-size: 11px;
+    color: var(--text-bodyColor);
+}
+
+
+/* Audio controls and seekbar */
+
+.audioPlayer-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.audioButtons {
+    height: 36px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+#playCTA {
+    background-color: white;
+    border: 0;
+    border-radius: 99em;
+    height: 32px;
+    width: 32px;
+    margin: 0px 2px;
+}
+
+#playCTA img {
+    width: 16px;
+
+    vertical-align: middle;
+}
+
+#playCTA:hover {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    margin: 0px;
+}
+
+
+.seekBar input[type="range"] {
+    /* -webkit-appearance: none; */
+    width: 35vw;
+    height: 4px;
+    cursor: pointer;
+    background-color: rgb(252, 105, 105);
+    border-radius: 99em;
+    accent-color: white;
+    outline: none;
+    initial-value: 0;
+}
+
+.seekBar input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    initial-value: 0;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: white;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+}
+  
+  
+.seekBar input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+}
+
+
+.seekBar input[type=range]::-webkit-progress-value  {
+    background-color: var(--primary-green);
+
+}
+  
+
+/* volume buttons etc */
+
+.audioPlayer-volumeEtc {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.audioPlayer-volumeEtc > *:first-child {
+    opacity: 0.5;
+}
+
+.audioPlayer-volumeEtc > *:nth-child(4) img {
+    opacity: 1;
+}
+
+.audioPlayer-volumeEtc input[type="range"] {
+    /* -webkit-appearance: none; */
+    width: 90px;
+    height: 4px;
+    cursor: pointer;
+    background-color: rgb(252, 105, 105);
+    border-radius: 99em;
+    accent-color: white;
+    outline: none;
+}
